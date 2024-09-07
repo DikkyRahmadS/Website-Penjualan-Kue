@@ -1,0 +1,226 @@
+@import url('../all.css');
+.notification {
+    width: 60%;
+    margin: 30px auto auto;
+}
+
+.head_notification {
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_notification h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.head_notification p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.isi_notification {
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+.box_isi_notification {
+    width: 100%;
+    padding: 20px 30px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.box_isi_notification img {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.text_box_isi_notification {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.text_box_isi_notification h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    margin-top: -5px;
+}
+
+.text_box_isi_notification h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--semi-black);
+    margin-top: 5px;
+}
+
+.text_box_isi_notification p {
+    font-size: 13px;
+    color: var(--grey);
+    margin-top: 7px;
+}
+
+.isi_notification0 {
+    width: 100%;
+    padding: 0px 0px;
+    background-color: var(--white);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.isi_notification0 img {
+    height: 130px;
+}
+
+.isi_notification0 p {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        display: none;
+    }
+    .back_header {
+        display: none;
+    }
+    .notification {
+        width: 100%;
+        margin: 0%;
+    }
+    .head_notification {
+        padding: 15px 20px;
+    }
+    .box_isi_notification {
+        padding: 20px 20px;
+    }
+    .head_notification h1 {
+        font-size: 17px;
+    }
+    .head_notification p {
+        font-size: 15px;
+    }
+    .text_box_isi_notification h3 {
+        font-size: 15px;
+    }
+    .text_box_isi_notification h4 {
+        font-size: 13px;
+    }
+    .text_box_isi_notification p {
+        font-size: 12px;
+    }
+}
+
+/* Chat */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+  
+.chat-message {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-name{
+    font-weight: bold !important;
+    font-size: 15px !important;
+    margin-bottom: 0;
+    color: red !important;
+  }
+
+.chat-name{
+    font-weight: bold !important;
+    font-size: 15px !important;
+    margin-bottom: 0;
+    color: red !important;
+}
+  
+.chat-bubble {
+    max-width: 70%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-bubble p{
+    margin: 5px 5px !important;
+    font-size: 12px;
+}
+  
+.left .chat-bubble {
+    align-self: flex-start;
+}
+  
+.right .chat-bubble {
+    align-self: flex-end;
+}
+  
+.right .chat-time {
+    font-size: 12px;
+    padding: 5px;
+    color: #999;
+    float: right;
+}
+
+.left .chat-time {
+    font-size: 12px;
+    color: #999;
+    padding: 5px;
+}
+
+.chat-input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .chat-input-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-input-container button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-input-container button[type="submit"]:hover {
+    background-color: #0e91d3;
+  }
+  
